@@ -1,0 +1,28 @@
+{
+  "name": "torrequest",
+  "version": "0.0.1",
+  "description": "request-clone with connection to torfetch-module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/atd-schubert/torrequest.git"
+  },
+  "keywords": [
+    "request",
+    "tor",
+    "onion"
+  ],
+  "author": "Arne Schubert <atd.schubert@gmail.com>",
+  "license": "BSD",
+  "bugs": {
+    "url": "https://github.com/atd-schubert/torrequest/issues"
+  },
+  "dependencies": {
+    "request": "~2.34.0",
+    "socks5-http-client": "~0.1.6",
+    "socks5-https-client": "~0.2.2"
+  }
+}
