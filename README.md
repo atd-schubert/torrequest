@@ -29,11 +29,11 @@ There are two optional parameters specially introduced for the tor settings: tor
 var torRequest = require("torrequest");
 
 torRequest({
-  url: "http://example.org",
+  uri: "http://example.org",
   torHost: "my-host-or-ip",
-  torPort: 12345
-}, function(err, res, body){
-  if(err) return console.log("Got error: "+err);
+  torPort: 9050
+}, function(err,res,doc){
+  if(err) return console.log("Error: "+err);
   console.log("Document fetched successfully...");
 });
 ```

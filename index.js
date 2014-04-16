@@ -16,7 +16,14 @@ module.exports = function(opts, cb){
     proto = url.parse(opts).protocol;
     params.url = opts;
   }
-  else {
+  else if(opts.uri){
+    proto = url.parse(opts.uri).protocol;
+    params = opts;
+  } 
+  else if(opts.url){
+    proto = url.parse(opts.url).protocol;
+    params = opts;
+  } else {
     proto = opts.protocol;
     params = opts;
   }
@@ -24,6 +31,10 @@ module.exports = function(opts, cb){
   var thost = opts.torHost || defaultTorHost;
   var tport = opts.torPort || defaultTorPort;
   
+  proto = proto || "http:"; // Fallback
+  
+  delete params.torHost;
+  delete params.torPort;
   
   if(proto.indexOf("https")>=0) {
     params.agent = new Socks5ClientHttpsAgent({
