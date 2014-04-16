@@ -24,7 +24,7 @@ You can use this module like the request module. Please see [the readme of reque
 
 There are two optional parameters specially introduced for the tor settings: torHost and torPort. Normally this module use the standard localhost:9050.
 
-### Example with costume host and port.
+### Example with custom host and port.
 ```
 var torRequest = require("torrequest");
 
