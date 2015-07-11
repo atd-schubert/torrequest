@@ -1,6 +1,6 @@
 {
   "name": "torrequest",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "request-clone with connection to torfetch-module",
   "main": "index.js",
   "scripts": {
@@ -21,8 +21,8 @@
     "url": "https://github.com/atd-schubert/torrequest/issues"
   },
   "dependencies": {
-    "request": "~2.34.0",
-    "socks5-http-client": "~0.1.6",
-    "socks5-https-client": "~0.2.2"
+    "request": "^2.58.0",
+    "socks5-http-client": "^1.0.1",
+    "socks5-https-client": "^1.1.0"
   }
 }
